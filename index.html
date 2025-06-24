@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveXe - Car Rental Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>ABC Rental</h1>
+            </div>
+            <nav class="nav-center">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#cars">Cars</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                    <li><a href="#orders">Orders</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="btn-primary">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Your Journey,<br>Your Car,<br>Your Way</h2>
+                <p>Experience the ultimate freedom of driving with ABC Rental your journey with our premium fleet of vehicles.</p>
+                <button class="btn-hero" onclick="scrollToSection('cars')">Get Started</button>
+            </div>
+            <div class="hero-image">
+                <img src="screenshots/sigra.jpg" alt="Red Car" id="hero-car">
+            </div>
+        </div>
+    </section>
+
+    <!-- Cars Section -->
+    <section id="cars" class="cars-section">
+        <div class="container">
+            <h2 class="section-title">Our Impressive Fleet</h2>
+            <div class="cars-grid" id="cars-grid">
+                <!-- Cars will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <h2 class="section-title">Complete Your Booking</h2>
+            <div class="booking-form">
+                <div class="customer-info">
+                    <label for="customerName">Customer Name:</label>
+                    <input type="text" id="customerName" placeholder="Enter your name" required>
+                </div>
+                <div class="booking-summary" id="booking-summary">
+                    <!-- Summary will be populated by JavaScript -->
+                </div>
+                <div class="booking-actions">
+                    <button class="btn-calculate" onclick="calculateTotal()">Calculate Total</button>
+                    <button class="btn-save" onclick="saveBooking()">Save Booking</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Orders Section -->
+    <section id="orders" class="orders-section">
+        <div class="container">
+            <h2 class="section-title">Your Bookings</h2>
+            <div class="orders-list" id="orders-list">
+                <!-- Orders will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>ABC Rental</h3>
+                    <p>Your trusted car rental partner</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Car Rental</a></li>
+                            <li><a href="#">Long Term</a></li>
+                            <li><a href="#">Corporate</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ABC Rental. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
